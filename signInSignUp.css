@@ -1,0 +1,85 @@
+.col-11{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    background-image: url('images/Rectangle 160.png');
+    background-size: cover; /* This makes the background cover the whole area */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+    background-position: center center;
+    height: 600px;
+}
+.adminCol-11{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    background-image: url('images/Rectangle 163.png');
+    background-size: cover; /* This makes the background cover the whole area */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+    background-position: center center;
+    height: 600px;
+}
+.col-22{
+    float: left;
+    width: 70%;
+    padding: 10px;
+    height: auto;
+}
+.signUpHeading{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    color: brown;
+    font-family: Nunito Sans;
+    line-height: 50px;
+    border-bottom: 2px solid #fff;
+}
+.signUpContaoner{
+    padding: 20px 50px 0 50px;
+}
+.signUpTopText{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+.signUpForm{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input{
+    width: 100%;
+    border: none;
+    padding: 5px 20px;
+    border-bottom: 2px solid White;
+    background: transparent;
+    color: brown;
+    outline: none;
+}
+.newInput{
+    border:2px solid;
+    padding: 10px;
+    border-radius: 5px;
+}
+input::placeholder {
+    color: brown; /* Change this to any color you prefer */
+}
+.inputBox{
+    height: 25px;
+    width:30px
+}
+.formButton{
+    font-size: 23px;
+    font-weight: 600;
+    padding: 5px 20px;
+    border: none;
+    background: brown;
+    color: white;
+    border-radius: 5px;
+    transition: transform 1s, opacity 1s; /* Apply transition to transform and opacity */
+}
+
+.formButton:hover {
+    transform: scale(1.1); /* Increase the size */
+    opacity: 0.8; /* Decrease opacity */
+}

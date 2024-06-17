@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="adminIndex.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- <div class="logo">LOGO</div> -->
+            <ul class="navbar-links">
+                <h3>Dashboard</h3>
+            </ul>
+            <div class="logo" style="padding-left: 0px; margin-left: 0;">Crystal CARTS</div>
+            <div class="icons-list">
+                <!-- <i class="fa-solid fa-heart icons"></i>
+                <i class="fa-solid fa-cart-shopping icons"></i>
+                <button class="primaryBtn">LOGIN</button> -->
+                <h5><i class="fa-solid fa-user"></i>&nbsp;&nbsp; ADMIN</h5>
+            </div>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <a href="product.html">
+                    <li>Product</li>
+                </a>
+                <a href="category.html">
+                    <li>Categories</li>
+                </a>
+                <a href="sliderImage.html">
+                    <li>Slider Images</li>
+                </a>
+                <a href="viewCustomer.html">
+                    <li>View Customer</li>
+                </a>
+                <a href="viewOrder.html">
+                    <li>View Orders</li>
+                </a>
+                <a href="viewPayment.html">
+                    <li>View Payments</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+    <div>
+        <div class="rows">
+            <div class="cols-1" style="height: 570px;">
+                <a href="product.html" style="color: black;">
+                    <h5 class="adminSideBarHead">Product</h5>
+                </a>
+                <a href="category.html" style="color: black;">
+                    <h5 class="adminSideBarHead">Categories</h5>
+                </a>
+                <a href="sliderImage.html" style="color: black;">
+                    <h5 class="adminSideBarHead">Slider Images</h5>
+                </a>
+                <a href="viewCustomer.html" style="color: black;">
+                    <h5 class="adminSideBarHead">View Customer</h5>
+                </a>
+                <a href="viewOrder.html" style="color: black;">
+                    <h5 class="adminSideBarHead">View Orders</h5>
+                </a>
+                <a href="viewPayment.html" style="color: black;">
+                    <h5 class="adminSideBarHead">View Payments</h5>
+                </a>
+            </div>
+            <div class="cols-2">
+                <p class="adminTitle">View Customers</p>
+                <div class="adminTable">
+                    <table style="width: 100%; overflow: scroll;">
+                        <thead>
+                            <tr>
+                                <th>Cust Id</th>
+                                <th>Cust Name</th>
+                                <th>Cust Email</th>
+                                <th>Cust Contact</th>
+                                <th>Cust Address</th>
+                                <th>Make Changes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 2px solid;">
+                                <td>1</td>
+                                <td>abc</td>
+                                <td>abc@gmail.com</td>
+                                <td>9176534312</td>
+                                <td>Delhi</td>
+                                <td><button class="tableButton">Edit</button><br><button class="tableButton"style="margin-top:3px">Delete</button></td>
+                            </tr>
+                            <tr style="border-bottom: 2px solid;">
+                                <td>2</td>
+                                <td>mno</td>
+                                <td>mno@gmail.com</td>
+                                <td>9547655890</td>
+                                <td>Mumbai</td>
+                                <td><button class="tableButton">Edit</button><br><button class="tableButton"style="margin-top:3px">Delete</button></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>xyz</td>
+                                <td>xyz@gmail.com</td>
+                                <td>8760452313</td>
+                                <td>Raipur</td>
+                                <td><button class="tableButton">Edit</button><br><button class="tableButton"style="margin-top:3px">Delete</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+</body>
+
+<script src="/script.js"></script>
+
+</html>

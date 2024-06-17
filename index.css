@@ -1,0 +1,509 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background: rgba(254, 215, 186, 1);
+    align-items: center;
+}
+.navbar-links {display: flex; gap: 30px;}
+.navbar-links a {
+    text-decoration: none;
+    color: black;
+    margin: 0 1rem;
+    position: relative;
+}
+.adminOrUser {
+    background-color: #fff;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    justify-content: center; /* Center the dialog */
+    align-items: center; /* Center the dialog */
+}
+.greeTing{
+    padding: 50px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.greeTingText{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Poppins';
+    color: rgba(139, 0, 0, 1);
+    margin: 0;
+}
+.adminOrUser-dialog-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 0px 20px 0px 0;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 700px;
+    height: auto;
+}
+
+.adminOrUser-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.adminOrUser-close:hover,
+.adminOrUser-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*adminSignIn*/
+.adminSignIn {
+    background-color: rgba(224, 196, 196, 1);
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    justify-content: center; /* Center the dialog */
+    align-items: center; /* Center the dialog */
+}
+
+.adminSignIn-dialog-content {
+    background-color: rgba(224, 196, 196, 1);
+    margin: auto;
+    padding: 0px 20px 0px 0;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 900px;
+    height: auto;
+}
+
+.adminSignIn-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.adminSignIn-close:hover,
+.adminSignIn-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*forge password*/
+.forgetPassWord {
+    background-color: rgba(224, 196, 196, 1);
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    justify-content: center; /* Center the dialog */
+    align-items: center; /* Center the dialog */
+}
+
+.forgetPasswordClose {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.adminSignIn-close:hover,
+.adminSignIn-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.forgetMainHeadText{
+    margin-top: 20px;
+    text-align: center;
+    font-style: italic;
+    color: brown;
+}
+/*otp*/
+.otp{
+    background-color: rgba(224, 196, 196, 1);
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    justify-content: center; /* Center the dialog */
+    align-items: center; /* Center the dialog */
+}
+
+.otpClose{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.otpClose:hover,
+.otpClose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*new password*/
+.newPassword{
+    background-color: rgba(224, 196, 196, 1);
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    justify-content: center; /* Center the dialog */
+    align-items: center; /* Center the dialog */
+}
+
+.newPasswordClose{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.newPasswordClose:hover,
+.newPasswordClose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*admin*/
+.adminsignUp {
+    background-color: rgba(224, 196, 196, 1);
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    justify-content: center; /* Center the dialog */
+    align-items: center; /* Center the dialog */
+}
+
+.adminSinup-dialog-content {
+    background-color: rgba(224, 196, 196, 1);
+    margin: auto;
+    padding: 0px 20px 0px 0;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 900px;
+    height: auto;
+}
+
+.adminSignUpClose {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.adminSignUpClose:hover,
+.adminSignUpClose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*dialog*/
+.dialog {
+    background-color: rgba(224, 196, 196, 1);
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    justify-content: center; /* Center the dialog */
+    align-items: center; /* Center the dialog */
+}
+
+.dialog-content {
+    background-color: rgba(224, 196, 196, 1);
+    margin: auto;
+    padding: 0px 20px 0px 0;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 900px;
+    height: auto;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.dialog1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    justify-content: center; /* Center the dialog */
+    align-items: center; /* Center the dialog */
+}
+
+.dialog-content1 {
+   background-color: rgba(224, 196, 196, 1);
+    margin: auto;
+    padding: 0px 20px 0px 0;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 900px;
+    height: auto;
+}
+
+.close1 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.loginOrUser{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+}
+.userSignInBtn{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(139, 0, 0, 1);
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    outline: none;
+    width: 100%;
+}
+.adminSignInBtn{
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(139, 0, 0, 1);
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    outline: none;
+}
+.button{
+    padding: 4px 15px;
+    border: none;
+    border-radius: 50px;
+    background: rgba(139, 0, 0, 1);
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    outline: none;
+}
+.navbar-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: red;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+.navbar-links a:hover::after {width: 100%;}
+.navbar-links li {
+    list-style: none;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+}
+.icons-list {display: flex; gap: 20px;}
+.logo {
+    font-family: Poppins;
+    font-size: 24PX;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 30px;
+    padding: 5px 10px;
+    border: 3px solid;
+    background: burlywood;
+}
+.icons {font-size: 30px;}
+.hamburger {display: none;cursor: pointer;}
+.mobile-menu {
+    margin-top: 5px;
+    display: none;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.mobile-menu ul {list-style: none;padding: 0;}
+.mobile-menu ul a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 1rem;
+    border-bottom: 1px solid #444;
+}
+/* Home page1 */
+.heightSystem{
+    height:610px;
+}
+.mainImage{
+    max-height: 550px;
+}
+/* Home page2 */
+.homePage2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.homePage2Title{color: rgba(139, 0, 0, 1) ;text-align: center;}
+.homePage2SubTitle{color: rgba(113, 108, 108, 1);font-weight: 600;text-align: center;}
+.homePage2Grid{background-color: #fff;}
+.homepage2GridTitle{text-align: center; font-weight: 600;}
+.homePage2ImageBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.homePage2Image{
+    max-width: 300px;
+    padding: 20px 30px;
+    background: rgba(131, 39, 41, 1);
+}
+/*footer*/
+.footer{
+    padding: 20px;
+    background: rgba(217, 217, 217, 1);
+}
+.footerTitle{
+    font-weight: 600;
+    color: brown;
+    font-size: 30px;
+    font-weight: 700 !important;
+}
+ul{padding: 0; padding-top: 20px;}
+ul li{list-style: none; padding-top: 5px;}
+.footerLast{
+    text-align: center;
+    padding: 10px 20px;
+    background-color: rgba(254, 215, 186, 1);
+    font-weight: 700 !important;
+}
+/*blog section*/
+.blogHead{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Nunito Sans';
+}
+.blogText{
+    font-size: 20px;
+    font-family: 'Nunito Sans';
+    font-weight: 600;
+    color: brown;
+}
+.blogGridTextBox{
+    background: #fff;
+    padding: 50px 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.blogGridText{
+    font-size: 23px;
+    text-align: justify;
+    font-weight: 500;
+    font-family: 'Nunito Sans'
+}
+.blogGridBoldText{
+    font-family: 'Nunito Sans';
+    font-weight: 700;
+}
+@media (max-width: 1000px){
+    .heightSystem{height: 450px;}
+}
+@media (max-width: 575px){
+    .heightSystem{height: auto;}
+    .logo{font-size: 27px;}
+    .mainImage{max-height: auto;}
+}
+@media (max-width: 767px) {
+    .heightSystem{height: 300px;}
+    .navbar-links,
+    .icons-list button {display: none;}
+    .logo1{padding-left: 15px; margin-left: 50px;}
+    .heightSystem{height: 340px;}
+    .hamburger {display: block;}
+    .icons-list {display: none;}
+    .icons-list1 {display: flex; gap: 20px;}
+}
+
+.show {display: block;}
