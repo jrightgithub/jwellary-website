@@ -1,0 +1,256 @@
+body{
+    background-color: blanchedalmond !important;
+}
+.rows{display: flex; gap: 20px;}
+.cols-11{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    float: left;
+    width: 30%;
+    padding: 20px;
+    height: auto;
+    background-color: #fff;
+}
+p{
+    margin: 0;
+}
+.profileFunction{
+color: rgba(113, 108, 108, 1);
+font-family:Nunito Sans;
+font-weight: 700;
+margin: 0;
+font-size: 26px;
+}
+.profileHeadings img{
+    width: 23px;
+    height: 23px;
+}
+.list a{
+    text-decoration: none;
+    color: black !important;
+}
+.list a:hover{
+    color: rgba(139, 0, 0, 1) !important;
+    font-weight: 700;
+}
+.list a:active{
+    color: rgba(139, 0, 0, 1) !important;
+    font-weight: 700;
+}
+.list ul{
+    margin: 0;
+    padding-top: 10px;
+}
+.list ul li{
+    padding-left: 40px;
+    font-size: 17px;
+}
+.cols-22{
+    float: left;
+    width: 70%;
+    padding: 20px;
+    height: auto;
+    background-color: #fff;
+
+}
+.profileUser{
+    padding: 10px;
+    background: blanchedalmond;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.profileHello{
+    font-size: 20px;
+    font-weight: 400;
+}
+.uprofileUserName{
+    font-size: 30px;
+    font-weight: 700;
+    color: rgba(139, 0, 0, 1);
+}
+.profileHeadings{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.profileCols22{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.profileCols23{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.profileCol22Heading{
+    font-weight: 700;
+    padding-top: 20px;
+}
+.profileInputBox{
+    display: flex;
+    flex-direction: column;
+}
+.profileInputBox input{
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 18px;
+    outline: none;
+}
+.profileRadioBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.profileSubmit{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 70px;
+    border: none;
+    background: brown;
+    color: white;
+    border-radius: 5px;
+    transition: transform 1s, opacity 1s; /* Apply transition to transform and opacity */
+}
+
+.profileSubmit:hover {
+    transform: scale(1.1); /* Increase the size */
+    opacity: 0.8; /* Decrease opacity */
+}
+/* manage profile page */
+.maganeButton{
+    padding: 7px 30px;
+    border: 1px solid rgba(139, 0, 0, 1);
+    border-radius: 5px;
+    background: rgba(210, 127, 127, 0.5);
+    font-weight: 600;
+}
+.manageAddress{
+    padding: 20px;
+    border: 1px solid brown;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.manageDelevaryType{
+    margin: 0;
+    font-weight: 700;
+}
+.manageRadioBox{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+}
+.manageLabelDelevaryBox{
+    font-weight: 400;
+    margin: 0;
+    font-size: 14px;
+    padding-left: 30px;
+    font-family: 'Poppins';
+}
+/* save carts */
+.saveCartGridBox{
+   margin-top: 20px;
+}
+.saveUpitext{
+    font-family: Nunito Sans;
+font-size: 15px;
+font-weight: 300;
+text-align: left;
+margin-bottom: 0;
+}
+.giftText{
+    margin: 10px 0;
+    font-weight: 700;
+    font-size: 20px;
+}
+/*wishlistBox*/
+.wishlistBox{
+    padding: 10px 20px;
+    border: 1px solid black;
+    background: rgba(217, 217, 217, 1);
+    max-width: 300px;
+    width: 100%;
+}
+.wishListText{
+    margin: 0;
+    padding: 5px 0;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Poppins';
+}
+.wishlistButton{
+    padding: 5px 25px;
+    background: rgba(38, 163, 50, 1);
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid rgba(38, 163, 50, 1);
+    border-radius: 25px;
+
+}
+.wishLidtddButton{
+    background: rgba(204, 189, 189, 1);
+    padding: 5px 25px;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: transform 1s, opacity 1s; /* Apply transition to transform and opacity */
+}
+
+.wishLidtddButton:hover {
+    transform: scale(1.1); /* Increase the size */
+    opacity: 0.8; /* Decrease opacity */
+}
+/**/
+.coopansContainer{
+    padding: 20px;
+    border: 1px solid brown;
+    box-shadow: 1px 5px 3px rgb(0 0 0 / 30%);
+}
+.coopansBoxHead{
+    margin: 0;
+    color: brown;
+    font-weight: 700;
+    font-size: 23px;
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+
+}
+.coopansSubHead{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(113, 108, 108, 1);
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+} 
+.coopansText{
+    margin: 0;
+    color: brown;
+    font-weight: 500;
+    padding-top: 5px;
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+}
+.notificationSubHead{
+    margin-bottom: 5px;
+    font-size: 27px;
+    font-weight: 700;
+    color: rgba(113, 108, 108, 1);
+
+}
+.notifications{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.notificationsChoice{
+    margin: 0;
+    font-size: 17px;
+    color: brown;
+    font-weight: 700;
+}
+.notifications input{
+    height: 20px;
+    width: 20px;
+}
